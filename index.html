@@ -7,7 +7,40 @@
     <title>Password Generator</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
+<body class="bg-purple-900 text-white flex items-center justify-center m-0 min-h-screen">
+    <div class="pw-container w-72 bg-purple-950">
+        <!-- Header part -->
+        <div class="pw-header p-4">
+            <div id="pw" class="pw w-full h-10 flex items-center bg-purple-900 text-lg relative p-4">
+                sjnkjn5622@Kk#$
+                <button id="copy" class="bg-white text-sm px-2 text-black hover:bg-slate-300 hover:font-semibold absolute right-0 -top-1/2 opacity-0 hover:opacity-100">Copy</button>
+            </div>
+        </div>
+
+        <!-- Body part -->
+        <div class="pw-boddy mx-4 mb-4">
+            <div class="form-control flex justify-between">
+                <label for="len">Password Length</label>
+                <input id="len" class="text-black" type="number" min="4" max="20">
+            </div>
+            <div class="form-control flex justify-between">
+                <label for="upper">Contain Uppercase Letters</label>
+                <input id="upper" type="checkbox">
+            </div>
+            <div class="form-control flex justify-between">
+                <label for="lower">Contain Lowercase Letters</label>
+                <input id="lower" type="checkbox">
+            </div>
+            <div class="form-control flex justify-between">
+                <label for="number">Contain Numbers</label>
+                <input id="number" type="checkbox">
+            </div>
+            <div class="form-control flex justify-between">
+                <label for="symbol">Contain Symbols</label>
+                <input id="symbol" type="checkbox">
+            </div>
+            <button id="generate" class="w-full text-black bg-yellow-500 py-1 font-semibold text-lg hover:bg-yellow-600 hover:font-bold">Generate Password</button>
+        </div>
+    </div>
 </body>
 </html>
