@@ -73,7 +73,6 @@ function generateX() {
 generateEl.addEventListener("click", generatePassword);
 
 
-
 // Copy password to clipboard
 function copyPassword() {  
     const textarea = document.createElement("textarea");
